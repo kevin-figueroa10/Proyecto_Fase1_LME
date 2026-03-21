@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galería — CodeNova</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<nav id="navbar" class="barra-nav">
+  <div class="contenedor nav-interior">
+    <a href="index.html" class="nav-logo-es" aria-label="CodeNova"><img src="img/Logo.png" alt="CodeNova"/></a>
+    <ul class="nav-enlaces" id="navLinks">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="galeria.html" class="activo">Galería</a></li>
+      <li><a href="acerca.html">Acerca de</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="autores.html">Autores</a></li>
+      <li class="nav-accion"><a href="contacto.html" class="boton boton-primario boton-peq">Solicitar Demo</a></li>
+    </ul>
+    <button class="menu-hamburguesa" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main>
+
+  <div class="hero-pagina">
+    <div class="fondo-hero-pagina"></div>
+    <div class="burbuja-hero-pagina burbuja-hero-pagina-1"></div>
+    <div class="burbuja-hero-pagina burbuja-hero-pagina-2"></div>
+    <div class="interior-hero-pagina">
+      <div class="contenedor">
+        <div class="etiqueta etiqueta-indigo margen-abajo-16">Capturas y demos</div>
+        <h1>Galería de <span>Productos</span></h1>
+        <p>Explora las interfaces y funcionalidades de nuestras soluciones de software empresarial</p>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="contenedor">
+      <div class="filtros-galeria">
+        <button class="boton-filtro activo" data-filter="all">Todos</button>
+        <button class="boton-filtro" data-filter="erp">ERP Nova</button>
+        <button class="boton-filtro" data-filter="cloud">CloudSync</button>
+        <button class="boton-filtro" data-filter="data">DataVault</button>
+        <button class="boton-filtro" data-filter="mobile">Mobile</button>
+      </div>
+
+      <div class="rejilla-galeria" id="galleryGrid">
+
+        <div class="item-galeria" data-cat="erp"
+          data-img="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1000&h=500&fit=crop"
+          data-title="ERP Nova — Dashboard Principal"
+          data-desc="Vista principal del módulo de gestión empresarial. KPIs en tiempo real, gráficas de ventas, control de inventario y estado financiero en un solo panel centralizado."
+          onclick="openLb(this)">
+          <div class="miniatura-galeria">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=400&fit=crop" alt="ERP Dashboard"/>
+            <div class="overlay-miniatura-galeria">🔍</div>
+          </div>
+          <div class="info-galeria">
+            <h3>Dashboard principal</h3>
+            <p>ERP Nova &mdash; Vista general de KPIs</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-cat="erp"
+          data-img="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1000&h=500&fit=crop"
+          data-title="ERP Nova — Módulo de Inventario"
+          data-desc="Gestión completa de inventario con alertas automáticas de stock mínimo, historial de movimientos y generación de órdenes de compra con un solo clic."
+          onclick="openLb(this)">
+          <div class="miniatura-galeria">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=700&h=400&fit=crop" alt="Inventario"/>
+            <div class="overlay-miniatura-galeria">🔍</div>
+          </div>
+          <div class="info-galeria">
+            <h3>Módulo de inventario</h3>
+            <p>ERP Nova &mdash; Control de stock en tiempo real</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-cat="cloud"
+          data-img="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1000&h=500&fit=crop"
+          data-title="CloudSync — Panel de Control"
+          data-desc="Panel de administración de archivos en la nube con sincronización automática, control de versiones y gestión granular de permisos por usuario y grupo."
+          onclick="openLb(this)">
+          <div class="miniatura-galeria">
+            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=700&h=400&fit=crop" alt="Cloud"/>
+            <div class="overlay-miniatura-galeria">🔍</div>
+          </div>
+          <div class="info-galeria">
+            <h3>Panel de control</h3>
+            <p>CloudSync &mdash; Gestión en la nube</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-cat="data"
+          data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1000&h=500&fit=crop"
+          data-title="DataVault — Analytics Avanzado"
+          data-desc="Análisis avanzado con gráficos interactivos, filtros dinámicos y exportación a múltiples formatos. Business Intelligence al alcance de cualquier área de tu empresa."
+          onclick="openLb(this)">
+          <div class="miniatura-galeria">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=400&fit=crop" alt="Analytics"/>
+            <div class="overlay-miniatura-galeria">🔍</div>
+          </div>
+          <div class="info-galeria">
+            <h3>Analytics & Business Intelligence</h3>
+            <p>DataVault &mdash; Análisis de datos empresariales</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-cat="mobile"
+          data-img="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1000&h=500&fit=crop"
+          data-title="App Móvil CodeNova"
+          data-desc="Aplicación móvil disponible para iOS y Android. Accede a todos tus módulos desde cualquier lugar con sincronización en tiempo real y notificaciones push inteligentes."
+          onclick="openLb(this)">
+          <div class="miniatura-galeria">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=700&h=400&fit=crop" alt="Mobile App"/>
+            <div class="overlay-miniatura-galeria">🔍</div>
+          </div>
+          <div class="info-galeria">
+            <h3>Aplicación móvil</h3>
+            <p>iOS & Android &mdash; Acceso remoto seguro</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-cat="erp"
+          data-img="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1000&h=500&fit=crop"
+          data-title="ERP Nova — Reportes Financieros"
+          data-desc="Generación automática de reportes financieros: balance general, estado de resultados y flujo de caja. Exportación con un clic en PDF y Excel."
+          onclick="openLb(this)">
+          <div class="miniatura-galeria">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&h=400&fit=crop" alt="Reportes"/>
+            <div class="overlay-miniatura-galeria">🔍</div>
+          </div>
+          <div class="info-galeria">
+            <h3>Reportes financieros</h3>
+            <p>ERP Nova &mdash; Contabilidad automatizada</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-cat="cloud"
+          data-img="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1000&h=500&fit=crop"
+          data-title="CloudSync — Centro de Seguridad"
+          data-desc="Cifrado AES-256 para todos los archivos. Autenticación de dos factores, registro detallado de accesos y alertas de seguridad en tiempo real."
+          onclick="openLb(this)">
+          <div class="miniatura-galeria">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=700&h=400&fit=crop" alt="Seguridad"/>
+            <div class="overlay-miniatura-galeria">🔍</div>
+          </div>
+          <div class="info-galeria">
+            <h3>Centro de seguridad</h3>
+            <p>CloudSync &mdash; Cifrado y control de acceso</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-cat="data"
+          data-img="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1000&h=500&fit=crop"
+          data-title="DataVault — Predicciones con IA"
+          data-desc="Motor de predicciones basado en machine learning. Anticipa tendencias de ventas, demanda de inventario y comportamiento de clientes con 92% de precisión."
+          onclick="openLb(this)">
+          <div class="miniatura-galeria">
+            <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=700&h=400&fit=crop" alt="IA"/>
+            <div class="overlay-miniatura-galeria">🔍</div>
+          </div>
+          <div class="info-galeria">
+            <h3>Predicciones con Inteligencia Artificial</h3>
+            <p>DataVault &mdash; Machine Learning aplicado</p>
+          </div>
+        </div>
+
+        <div class="item-galeria" data-cat="erp"
+          data-img="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1000&h=500&fit=crop"
+          data-title="ERP Nova — Recursos Humanos"
+          data-desc="Módulo completo de RRHH con gestión de planilla, control de asistencia biométrico, evaluaciones de desempeño y expedientes digitales de cada colaborador."
+          onclick="openLb(this)">
+          <div class="miniatura-galeria">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&h=400&fit=crop" alt="RRHH"/>
+            <div class="overlay-miniatura-galeria">🔍</div>
+          </div>
+          <div class="info-galeria">
+            <h3>Recursos Humanos</h3>
+            <p>ERP Nova &mdash; Gestión integral de personal</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion-cta">
+    <div class="fondo-cta"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=600&fit=crop" alt=""/></div>
+    <div class="superposicion-cta"></div>
+    <div class="contenedor interior-cta">
+      <h2>¿Te gustó lo que viste?</h2>
+      <p>Solicita una demo gratuita y descubre cómo CodeNova puede transformar tu empresa.</p>
+      <a href="contacto.html" class="boton boton-blanco">Solicitar Demo Gratuita &rarr;</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- CAJA DE LUZ (LIGHTBOX) -->
+<div class="caja-luz" id="lightbox" onclick="closeLb(event)">
+  <div class="interior-caja-luz">
+    <button class="boton-cerrar-caja-luz" onclick="closeLb()">&#10005;</button>
+    <div class="imagen-caja-luz"><img id="lbImg" src="" alt=""/></div>
+    <div class="cuerpo-caja-luz">
+      <div id="lbBadge" class="margen-abajo-12"></div>
+      <h3 id="lbTitle"></h3>
+      <p id="lbDesc"></p>
+      <a href="contacto.html" class="boton boton-primario boton-peq">Solicitar demo &rarr;</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="contenedor">
+    <div class="rejilla-pie">
+      <div class="marca-pie">
+        <a href="index.html" class="nav-logo" aria-label="CodeNova"><img src="img/Logo.png" alt="CodeNova"/></a>
+        <p>Empresa salvadoreña especializada en software empresarial.</p>
+        <div class="enlaces-sociales"><a href="#">f</a><a href="#">X</a><a href="#">in</a><a href="#">ig</a></div>
+      </div>
+      <div class="columna-pie"><h4>Productos</h4><ul><li><a href="galeria.html">ERP Nova</a></li><li><a href="galeria.html">CloudSync</a></li><li><a href="galeria.html">DataVault</a></li></ul></div>
+      <div class="columna-pie"><h4>Empresa</h4><ul><li><a href="acerca.html">Acerca de</a></li><li><a href="autores.html">Equipo</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+      <div class="columna-pie"><h4>Contacto</h4><ul><li><a href="mailto:info@codenova.com">info@codenova.com</a></li><li>+503 2200-0000</li><li>San Salvador, El Salvador</li></ul></div>
+    </div>
+    <div class="pie-inferior"><span>&copy; 2026 CodeNova. Todos los derechos reservados.</span><span>LME-404 &mdash; Universidad Don Bosco</span></div>
+  </div>
+</footer>
+</body>
+</html>

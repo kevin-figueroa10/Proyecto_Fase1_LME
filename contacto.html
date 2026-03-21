@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto — CodeNova</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<nav id="navbar" class="barra-nav">
+  <div class="contenedor nav-interior">
+    <a href="index.html" class="nav-logo-es" aria-label="CodeNova"><img src="img/Logo.png" alt="CodeNova"/></a>
+    <ul class="nav-enlaces" id="navLinks">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="acerca.html">Acerca de</a></li>
+      <li><a href="contacto.html" class="activo">Contacto</a></li>
+      <li><a href="autores.html">Autores</a></li>
+      <li class="nav-accion"><a href="contacto.html" class="boton boton-primario boton-peq">Solicitar Demo</a></li>
+    </ul>
+    <button class="menu-hamburguesa" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main>
+
+  <div class="hero-pagina">
+    <div class="fondo-hero-pagina"></div>
+    <div class="burbuja-hero-pagina burbuja-hero-pagina-1"></div>
+    <div class="burbuja-hero-pagina burbuja-hero-pagina-2"></div>
+    <div class="interior-hero-pagina">
+      <div class="contenedor">
+        <div class="etiqueta etiqueta-coral margen-abajo-16">Hablemos</div>
+        <h1>Contáctanos</h1>
+        <p>Estamos listos para ayudarte a encontrar la solución perfecta para tu empresa</p>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="contenedor">
+      <div class="contenedor-contacto">
+
+        <!-- INFORMACIÓN -->
+        <div class="columna-info-contacto">
+          <div class="etiqueta etiqueta-indigo">Información de contacto</div>
+          <h2>Estamos aquí para <span>ayudarte</span></h2>
+          <p>Contáctanos por cualquier medio o completa el formulario. Nuestro equipo te responderá en menos de 24 horas hábiles con la mejor solución para tu negocio.</p>
+
+          <div class="detalle-contacto">
+            <div class="icono-detalle-contacto">📍</div>
+            <div class="texto-detalle-contacto">
+              <h4>Dirección</h4>
+              <p>Blvd. Los Héroes, Local 12, San Salvador, El Salvador</p>
+            </div>
+          </div>
+          <div class="detalle-contacto">
+            <div class="icono-detalle-contacto">📞</div>
+            <div class="texto-detalle-contacto"><h4>Teléfono</h4><p>+503 2200-0000</p></div>
+          </div>
+          <div class="detalle-contacto">
+            <div class="icono-detalle-contacto">📧</div>
+            <div class="texto-detalle-contacto"><h4>Correo electrónico</h4><p>info@codenova.com</p></div>
+          </div>
+          <div class="detalle-contacto">
+            <div class="icono-detalle-contacto">🕐</div>
+            <div class="texto-detalle-contacto"><h4>Horario de atención</h4><p>Lunes a Viernes: 8:00 a.m. – 5:00 p.m.</p></div>
+          </div>
+
+          <!-- Foto -->
+          <div class="contact-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&h=320&fit=crop" alt="Equipo CodeNova" class="contact-photo-img"/>
+          </div>
+
+          <div class="contact-social-wrap">
+            <p class="contact-social-title">Síguenos</p>
+            <div class="enlaces-sociales social-gap-10 social-borde">
+              <a href="#">f</a>
+              <a href="#">X</a>
+              <a href="#">in</a>
+              <a href="#">ig</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORMULARIO -->
+        <div class="caja-formulario-contacto">
+          <h3>Envíanos un mensaje</h3>
+          <p>Los campos con <span class="texto-coral-negrita">*</span> son obligatorios.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="fila-formulario">
+              <div class="grupo-formulario">
+                <label for="nombre">Nombre <span class="req">*</span></label>
+                <input type="text" id="nombre" placeholder="Tu nombre" autocomplete="given-name"/>
+                <div class="error-formulario" id="err-nombre">Por favor ingresa tu nombre.</div>
+              </div>
+              <div class="grupo-formulario">
+                <label for="apellido">Apellido <span class="req">*</span></label>
+                <input type="text" id="apellido" placeholder="Tu apellido" autocomplete="family-name"/>
+                <div class="error-formulario" id="err-apellido">Por favor ingresa tu apellido.</div>
+              </div>
+            </div>
+
+            <div class="grupo-formulario">
+              <label for="email">Correo electrónico <span class="req">*</span></label>
+              <input type="email" id="email" placeholder="correo@empresa.com" autocomplete="email"/>
+              <div class="error-formulario" id="err-email">Ingresa un correo electrónico válido.</div>
+            </div>
+
+            <div class="fila-formulario">
+              <div class="grupo-formulario">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" placeholder="+503 0000-0000" autocomplete="tel"/>
+                <div class="error-formulario" id="err-telefono">Formato inválido. Ej: +503 2200-0000</div>
+              </div>
+              <div class="grupo-formulario">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" placeholder="Nombre de tu empresa" autocomplete="organization"/>
+              </div>
+            </div>
+
+            <div class="grupo-formulario">
+              <label for="asunto">Asunto <span class="req">*</span></label>
+              <select id="asunto">
+                <option value="">— Selecciona un asunto —</option>
+                <option value="demo">Solicitar demo gratuita</option>
+                <option value="erp">Información sobre ERP Nova</option>
+                <option value="cloud">Información sobre CloudSync</option>
+                <option value="data">Información sobre DataVault</option>
+                <option value="soporte">Soporte técnico</option>
+                <option value="ventas">Hablar con ventas</option>
+                <option value="otro">Otro</option>
+              </select>
+              <div class="error-formulario" id="err-asunto">Por favor selecciona un asunto.</div>
+            </div>
+
+            <div class="grupo-formulario">
+              <label for="mensaje">Mensaje <span class="req">*</span></label>
+              <textarea id="mensaje" placeholder="Describe tu consulta o lo que necesitas para tu empresa..."></textarea>
+              <div class="error-formulario" id="err-mensaje">El mensaje debe tener al menos 10 caracteres.</div>
+            </div>
+
+            <div class="grupo-formulario">
+              <div class="fila-checkbox">
+                <input type="checkbox" id="terminos"/>
+                <label for="terminos">Acepto los <a href="#" class="link-indigo-negrita">términos y condiciones</a> y la <a href="#" class="link-indigo-negrita">política de privacidad</a> de CodeNova. <span class="texto-coral-negrita">*</span></label>
+              </div>
+              <div class="error-formulario" id="err-terminos">Debes aceptar los términos para continuar.</div>
+            </div>
+
+            <button type="submit" class="boton boton-primario btn-full">
+              Enviar mensaje &rarr;
+            </button>
+          </form>
+
+          <div class="exito-formulario" id="formSuccess">
+            ✓ ¡Mensaje enviado con éxito! Te contactaremos en menos de 24 horas hábiles.
+          </div>
+        </div>
+      </div>
+
+      <!-- MAPA -->
+      <div class="contenedor-mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.9765423245374!2d-89.2143!3d13.7034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63304be9bf68f5%3A0x4e7d15e17432dd78!2sBoulevard%20de%20los%20H%C3%A9roes%2C%20San%20Salvador!5e0!3m2!1ses!2ssv!4v1700000000000!5m2!1ses!2ssv"
+          title="Ubicación CodeNova — San Salvador, El Salvador"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <p class="mapa-direccion">
+        📍 Blvd. Los Héroes, Local 12, San Salvador, El Salvador
+      </p>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="contenedor">
+    <div class="rejilla-pie">
+      <div class="marca-pie">
+        <a href="index.html" class="nav-logo" aria-label="CodeNova"><img src="img/Logo.png" alt="CodeNova"/></a>
+        <p>Empresa salvadoreña especializada en software empresarial.</p>
+        <div class="enlaces-sociales"><a href="#">f</a><a href="#">X</a><a href="#">in</a><a href="#">ig</a></div>
+      </div>
+      <div class="columna-pie"><h4>Productos</h4><ul><li><a href="galeria.html">ERP Nova</a></li><li><a href="galeria.html">CloudSync</a></li><li><a href="galeria.html">DataVault</a></li></ul></div>
+      <div class="columna-pie"><h4>Empresa</h4><ul><li><a href="acerca.html">Acerca de</a></li><li><a href="autores.html">Equipo</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+      <div class="columna-pie"><h4>Contacto</h4><ul><li><a href="mailto:info@codenova.com">info@codenova.com</a></li><li>+503 2200-0000</li><li>San Salvador, El Salvador</li></ul></div>
+    </div>
+    <div class="pie-inferior"><span>&copy; 2026 CodeNova. Todos los derechos reservados.</span><span>LME-404 &mdash; Universidad Don Bosco</span></div>
+  </div>
+</footer>
+</body>
+</html>
