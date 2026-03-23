@@ -4,185 +4,190 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Autores — CodeNova</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
 
-<nav id="navbar" class="barra-nav">
-  <div class="contenedor nav-interior">
-    <a href="index.html" class="nav-logo-es" aria-label="CodeNova"><img src="img/Logo.png" alt="CodeNova"/></a>
-    <ul class="nav-enlaces" id="navLinks">
+<nav class="nav-principal" id="navbar">
+  <div class="nav-cont">
+    <a href="index.html" class="nav-logo-link" aria-label="CodeNova">
+      <img src="img/Logo.png" alt="CodeNova"/>
+    </a>
+    <ul class="nav-menu" id="navMenu">
       <li><a href="index.html">Inicio</a></li>
       <li><a href="galeria.html">Galería</a></li>
       <li><a href="acerca.html">Acerca de</a></li>
       <li><a href="contacto.html">Contacto</a></li>
       <li><a href="autores.html" class="activo">Autores</a></li>
-      <li class="nav-accion"><a href="contacto.html" class="boton boton-primario boton-peq">Solicitar Demo</a></li>
+      <li class="nav-accion">
+        <a href="contacto.html" class="btn-cn btn-cn-primario btn-cn-pequeño">Solicitar Demo</a>
+      </li>
     </ul>
-    <button class="menu-hamburguesa" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+    <button class="btn-menu" id="btnMenu" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
-
 <main>
-
-  <div class="hero-pagina">
-    <div class="fondo-hero-pagina"></div>
-    <div class="burbuja-hero-pagina burbuja-hero-pagina-1"></div>
-    <div class="burbuja-hero-pagina burbuja-hero-pagina-2"></div>
-    <div class="interior-hero-pagina">
-      <div class="contenedor">
-        <div class="etiqueta etiqueta-indigo margen-abajo-16">LME-404 — Ciclo 01-2026</div>
+  <div class="enc-pag">
+    <div class="enc-pag-fondo"></div>
+    <div class="enc-pag-burbuja burbuja-der"></div>
+    <div class="enc-pag-burbuja burbuja-izq"></div>
+    <div class="enc-pag-cont">
+      <div class="container">
+        <div class="etq etq-ind mb-16">LME-404 — Ciclo 01-2026</div>
         <h1>Autores del <span>Sitio Web</span></h1>
-        <p>Equipo de desarrollo — Universidad Don Bosco, Escuela de Computación</p>
+        <p>Equipo de desarrollo — Universidad Don Bosco</p>
       </div>
     </div>
   </div>
-
   <section>
-    <div class="contenedor">
-
-      <div class="encabezado-seccion">
-        <div class="etiqueta etiqueta-mint">Nuestro equipo</div>
+    <div class="container">
+      <div class="cab-sec">
+        <div class="etq etq-ver">Nuestro equipo</div>
         <h2>Conoce a los <span>creadores</span></h2>
-        <p>Cinco estudiantes comprometidos con la excelencia técnica, el diseño moderno y la entrega de proyectos de alta calidad.</p>
+        <p>Estudiantes comprometidos con la excelencia técnica, el diseño moderno y la entrega de proyectos de alta calidad.</p>
       </div>
-
-      <!-- Fila 1: 3 autores -->
-      <div class="rejilla-autores">
-
-        <div class="tarjeta-autor">
-          <div class="foto-autor">
-            <img src="" alt="Autor 1"/>
-            <div class="overlay-foto-autor"></div>
-          </div>
-          <div class="cuerpo-autor">
-            <h3>Manuel de Jesus Mejia Rivera</h3>
-            <div class="etiqueta-rol-autor">Líder de Proyecto</div>
-            <p>Responsable de la coordinación general, arquitectura del sitio y desarrollo de la página de Inicio. Aseguró la coherencia visual y funcional del proyecto CodeNova.</p>
-            <div class="carnet-autor">Carnet: UDB00001</div>
-          </div>
-        </div>
-
-        <div class="tarjeta-autor">
-          <div class="foto-autor">
-            <img src="" alt="Autor 2"/>
-            <div class="overlay-foto-autor"></div>
-          </div>
-          <div class="cuerpo-autor">
-            <h3>Danna Paola Burgos Escobar</h3>
-            <div class="etiqueta-rol-autor">Diseñadora UX/UI</div>
-            <p>Creación de mockups para todas las páginas, definición de la guía visual, paleta de colores, tipografía y estándares de diseño del proyecto.</p>
-            <div class="carnet-autor">Carnet: UDB00002</div>
+      <!-- Fila 1 de autores  -->
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="tarjeta-autor">
+            <div class="autor-foto">
+              <img src="img/lider de proyecto.jpeg" alt="Manuel de Jesus Mejia Rivera" class="ajustar-img"/>
+              <div class="autor-foto-sombra"></div>
+            </div>
+            <div class="autor-cuerpo">
+              <h3>Manuel de Jesus Mejia Rivera</h3>
+              <span class="autor-rol">Líder de Proyecto</span>
+              <p>Responsable de la coordinación general, arquitectura del sitio y desarrollo de la página de Inicio.</p>
+            </div>
           </div>
         </div>
-
-        <div class="tarjeta-autor">
-          <div class="foto-autor">
-            <img src="" alt="Autor 3"/>
-            <div class="overlay-foto-autor"></div>
-          </div>
-          <div class="cuerpo-autor">
-            <h3>Jose Javier Aguilar Amaya</h3>
-            <div class="etiqueta-rol-autor">Frontend Developer</div>
-            <p>Desarrollo del CSS global y hoja de estilos. Responsable de la página de Galería con filtros interactivos, lightbox y diseño completamente responsivo.</p>
-            <div class="carnet-autor">Carnet: UDB00003</div>
+        <div class="col-lg-4 col-md-6">
+          <div class="tarjeta-autor">
+            <div class="autor-foto">
+              <img src="img/UI.jpeg" alt="Danna Paola Burgos Escobar" class="ajustar-img"/>
+              <div class="autor-foto-sombra"></div>
+            </div>
+            <div class="autor-cuerpo">
+              <h3>Danna Paola Burgos Escobar</h3>
+              <span class="autor-rol">Diseñadora UX/UI</span>
+              <p>Creación de mockups, definición de la guía visual, paleta de colores y tipografía del proyecto.</p>
+            </div>
           </div>
         </div>
-
+        <div class="col-lg-4 col-md-6">
+          <div class="tarjeta-autor">
+            <div class="autor-foto">
+              <img src="img/frontend developer.jpeg" alt="Jose Javier Aguilar Amaya" class="ajustar-img"/>
+              <div class="autor-foto-sombra"></div>
+            </div>
+            <div class="autor-cuerpo">
+              <h3>Jose Javier Aguilar Amaya</h3>
+              <span class="autor-rol">Frontend Developer</span>
+              <p>Desarrollo del CSS global y la hoja de estilos. Responsable de la página de Galería con filtros y lightbox.</p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <!-- Fila 2: 3 autores centrados -->
-      <div class="autores-fila2">
-
-        <div class="tarjeta-autor author-card-max360">
-          <div class="foto-autor">
-            <img src="" alt="Autor 4"/>
-            <div class="overlay-foto-autor"></div>
-          </div>
-          <div class="cuerpo-autor">
-            <h3>Dimas Emanuel Benitez Mejia</h3>
-            <div class="etiqueta-rol-autor">Frontend Developer</div>
-            <p>Desarrollo de las páginas "Acerca de" y "Autores". Maquetación, contenido, timeline corporativa y sección de equipo con fotos reales.</p>
-            <div class="carnet-autor">Carnet: UDB00004</div>
-          </div>
-        </div>
-
-        <div class="tarjeta-autor author-card-max360">
-          <div class="foto-autor">
-            <img src="" alt="Autor 5"/>
-            <div class="overlay-foto-autor"></div>
-          </div>
-          <div class="cuerpo-autor">
-            <h3>Kevin Isaac Figueroa Calderon</h3>
-            <div class="etiqueta-rol-autor">Full-Stack Developer</div>
-            <p>Desarrollo de la página de Contacto con todas las validaciones en JavaScript, integración del mapa de Google Maps y pruebas funcionales completas.</p>
-            <div class="carnet-autor">Carnet: UDB00005</div>
+      <!-- Fila 2 de autores-->
+      <div class="row g-4 justify-content-center mt-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="tarjeta-autor">
+            <div class="autor-foto">
+              <img src="img/front end.jpeg" alt="Dimas Emanuel Benitez Mejia" class="ajustar-img"/>
+              <div class="autor-foto-sombra"></div>
+            </div>
+            <div class="autor-cuerpo">
+              <h3>Dimas Emanuel Benitez Mejia</h3>
+              <span class="autor-rol">Frontend Developer</span>
+              <p>Desarrollo de las páginas "Acerca de" y "Autores", maquetación, contenido y timeline corporativa.</p>
+            </div>
           </div>
         </div>
-
-        <div class="tarjeta-autor author-card-max360">
-          <div class="foto-autor">
-            <img src="" alt="Autor 6"/>
-            <div class="overlay-foto-autor"></div>
-          </div>
-          <div class="cuerpo-autor">
-            <h3>Carlos Ernesto Sanchez Mejia</h3>
-            <div class="etiqueta-rol-autor">QA Tester</div>
-            <p>Pruebas de usabilidad, compatibilidad cross-browser y validación de accesibilidad. Documentación técnica y control de calidad en cada fase del proyecto.</p>
-            <div class="carnet-autor">Carnet: UDB00006</div>
+        <div class="col-lg-4 col-md-6">
+          <div class="tarjeta-autor">
+            <div class="autor-foto">
+              <img src="img/full stack.jpg" alt="Kevin Isaac Figueroa Calderon" class="ajustar-img"/>
+              <div class="autor-foto-sombra"></div>
+            </div>
+            <div class="autor-cuerpo">
+              <h3>Kevin Isaac Figueroa Calderon</h3>
+              <span class="autor-rol">Full-Stack Developer</span>
+              <p>Desarrollo de la página de Contacto con validaciones en JavaScript e integración del mapa.</p>
+            </div>
           </div>
         </div>
-
+        <div class="col-lg-4 col-md-6">
+          <div class="tarjeta-autor">
+            <div class="autor-foto">
+              <img src="img/tester.jpeg" alt="Kevin Alberto Mercado Erazo" class="ajustar-img"/>
+              <div class="autor-foto-sombra"></div>
+            </div>
+            <div class="autor-cuerpo">
+              <h3>Kevin Alberto Mercado Erazo</h3>
+              <span class="autor-rol">QA Tester</span>
+              <p>Pruebas de usabilidad, compatibilidad cross-browser, validación de accesibilidad y documentación técnica.</p>
+            </div>
+          </div>
+        </div>
       </div>
-
       <!-- Ficha del proyecto -->
-      <div class="project-info-box">
-        <div class="proyecto-encabezado">
-          <div class="etiqueta etiqueta-indigo margen-abajo-12">Información del proyecto</div>
-          <h3 class="h3-22">Proyecto de Cátedra — Fase 1</h3>
+      <div class="caja-proyecto">
+        <div class="proyecto-cabecera">
+          <div class="etq etq-ind mb-12">Información del proyecto</div>
+          <h3 style="font-size: 22px; font-weight: 800;">Proyecto de Cátedra — Fase 1</h3>
         </div>
-        <div class="project-info-grid">
-          <div><div class="pi-label">Asignatura</div><div class="pi-value">LME-404<br/><small class="small-12">Lenguaje de Marcado y Estilo Web</small></div></div>
-          <div><div class="pi-label">Ciclo</div><div class="pi-value">01-2026</div></div>
-          <div><div class="pi-label">Universidad</div><div class="pi-value">Universidad Don Bosco</div></div>
-          <div><div class="pi-label">Fase entregada</div><div class="pi-value accent">Fase 1</div></div>
-          <div><div class="pi-label">Fecha de entrega</div><div class="pi-value">23 de marzo, 2026</div></div>
+        <div class="proyecto-grid">
+          <div>
+            <div class="dato-label">Asignatura</div>
+            <div class="dato-valor">LME-404<br/><small style="font-size:12px; font-weight:400; color: var(--color-texto-med);">Lenguaje de Marcado y Estilo Web</small></div>
+          </div>
+          <div>
+            <div class="dato-label">Ciclo</div>
+            <div class="dato-valor">01-2026</div>
+          </div>
+          <div>
+            <div class="dato-label">Universidad</div>
+            <div class="dato-valor">Universidad Don Bosco</div>
+          </div>
+          <div>
+            <div class="dato-label">Fase entregada</div>
+            <div class="dato-valor resaltado">Fase 1</div>
+          </div>
+          <div>
+            <div class="dato-label">Fecha de entrega</div>
+            <div class="dato-valor">23 de marzo, 2026</div>
+          </div>
         </div>
         <div class="proyecto-pie">
-          <p class="parrafo-proyecto">
-            <span class="span-indigo-negrita">Tecnologías utilizadas:</span>
-            HTML5, CSS, Google Maps Embed API, Google Fonts
-          </p>
+          <p><span>Tecnologías utilizadas:</span> HTML5, CSS3, Bootstrap 5, Google Maps Embed API, Google Fonts</p>
         </div>
       </div>
-
     </div>
   </section>
-
-  <!-- LLAMADO A LA ACCIÓN -->
-  <section class="seccion-cta">
-    <div class="fondo-cta"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=600&fit=crop" alt=""/></div>
-    <div class="superposicion-cta"></div>
-    <div class="contenedor interior-cta">
-      <h2>¿Te gustó el proyecto?</h2>
-      <p>Visita CodeNova y descubre el software que transformará tu empresa en Centroamérica.</p>
-      <a href="index.html" class="boton boton-blanco">Ver el sitio completo &rarr;</a>
-    </div>
-  </section>
-
 </main>
-
-<footer>
-  <div class="contenedor">
-    <div class="rejilla-pie">
-      <div class="marca-pie">
-        <a href="index.html" class="nav-logo" aria-label="CodeNova"><img src="img/Logo.png" alt="CodeNova"/></a>
-        <p>Empresa salvadoreña especializada en software empresarial.</p>
-        <div class="enlaces-sociales"><a href="#">f</a><a href="#">X</a><a href="#">in</a><a href="#">ig</a></div>
+<!--footer-->
+<footer class="pie-pagina">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-5">
+        <div class="pie-descripcion">
+          <a href="index.html" class="pie-logo" aria-label="CodeNova"><img src="img/Logo.png" alt="CodeNova"/></a>
+          <p>Empresa salvadoreña especializada en software empresarial.</p>
+          <div class="redes-sociales"><a href="#">f</a><a href="#">X</a><a href="#">in</a><a href="#">ig</a></div>
+        </div>
       </div>
-      <div class="columna-pie"><h4>Productos</h4><ul><li><a href="galeria.html">ERP Nova</a></li><li><a href="galeria.html">CloudSync</a></li><li><a href="galeria.html">DataVault</a></li></ul></div>
-      <div class="columna-pie"><h4>Empresa</h4><ul><li><a href="acerca.html">Acerca de</a></li><li><a href="autores.html">Equipo</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
-      <div class="columna-pie"><h4>Contacto</h4><ul><li><a href="mailto:info@codenova.com">info@codenova.com</a></li><li>+503 2200-0000</li><li>San Salvador, El Salvador</li></ul></div>
+      <div class="col-lg-2 col-md-4">
+        <div class="columna-pie"><h4>Productos</h4><ul><li><a href="galeria.html">ERP Nova</a></li><li><a href="galeria.html">CloudSync</a></li><li><a href="galeria.html">DataVault</a></li></ul></div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <div class="columna-pie"><h4>Empresa</h4><ul><li><a href="acerca.html">Acerca de</a></li><li><a href="autores.html">Equipo</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <div class="columna-pie"><h4>Contacto</h4><ul><li><a href="mailto:info@codenova.com">info@codenova.com</a></li><li>+503 2200-0000</li><li>San Salvador, El Salvador</li></ul></div>
+      </div>
     </div>
     <div class="pie-inferior"><span>&copy; 2026 CodeNova. Todos los derechos reservados.</span><span>LME-404 &mdash; Universidad Don Bosco</span></div>
   </div>

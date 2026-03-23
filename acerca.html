@@ -4,183 +4,200 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Acerca de — CodeNova</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-
-<nav id="navbar" class="barra-nav">
-  <div class="contenedor nav-interior">
-    <a href="index.html" class="nav-logo-es" aria-label="CodeNova"><img src="img/Logo.png" alt="CodeNova"/></a>
-    <ul class="nav-enlaces" id="navLinks">
+<nav class="nav-principal" id="navbar">
+  <div class="nav-cont">
+    <a href="index.html" class="nav-logo-link" aria-label="CodeNova">
+      <img src="img/Logo.png" alt="CodeNova"/>
+    </a>
+    <ul class="nav-menu" id="navMenu">
       <li><a href="index.html">Inicio</a></li>
       <li><a href="galeria.html">Galería</a></li>
       <li><a href="acerca.html" class="activo">Acerca de</a></li>
       <li><a href="contacto.html">Contacto</a></li>
       <li><a href="autores.html">Autores</a></li>
-      <li class="nav-accion"><a href="contacto.html" class="boton boton-primario boton-peq">Solicitar Demo</a></li>
+      <li class="nav-accion">
+        <a href="contacto.html" class="btn-cn btn-cn-primario btn-cn-pequeño">Solicitar Demo</a>
+      </li>
     </ul>
-    <button class="menu-hamburguesa" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+    <button class="btn-menu" id="btnMenu" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
-
 <main>
-
-  <div class="hero-pagina">
-    <div class="fondo-hero-pagina"></div>
-    <div class="burbuja-hero-pagina burbuja-hero-pagina-1"></div>
-    <div class="burbuja-hero-pagina burbuja-hero-pagina-2"></div>
-    <div class="interior-hero-pagina">
-      <div class="contenedor">
-        <div class="etiqueta etiqueta-indigo margen-abajo-16">Nuestra historia</div>
+  <div class="enc-pag">
+    <div class="enc-pag-fondo"></div>
+    <div class="enc-pag-burbuja burbuja-der"></div>
+    <div class="enc-pag-burbuja burbuja-izq"></div>
+    <div class="enc-pag-cont">
+      <div class="container">
+        <div class="etq etq-ind mb-16">Nuestra historia</div>
         <h1>Acerca de <span>CodeNova</span></h1>
         <p>Transformando la manera en que las empresas centroamericanas gestionan su negocio desde 2020</p>
       </div>
     </div>
   </div>
-
-  <!-- INTRODUCCIÓN -->
+  <!-- QUIÉNES SOMOS -->
   <section>
-    <div class="contenedor">
-      <div class="about-intro">
-        <div class="about-img-wrap">
-          <div class="about-img-main">
-            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&h=900&fit=crop" alt="Oficina CodeNova"/>
-          </div>
-          <div class="about-img-float">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=450&fit=crop" alt="Equipo trabajando"/>
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <div class="fotos-acerca">
+            <div class="foto-acerca-principal">
+              <img src="img/imagen_prinsipal_acercade.jpeg" alt="Oficina CodeNova"/>
+            </div>
+            <div class="foto-acerca-flotante">
+              <img src="img/index imagen prinsipal.jpeg" alt="Equipo trabajando"/>
+            </div>
           </div>
         </div>
-        <div class="about-text">
-          <div class="etiqueta etiqueta-indigo">¿Quiénes somos?</div>
-          <h2>Software que <span>impulsa</span> el crecimiento empresarial</h2>
-          <p>CodeNova es una empresa salvadoreña fundada en 2020 con la misión de democratizar el acceso a software empresarial de calidad en Centroamérica. Nacimos de la convicción de que las pequeñas y medianas empresas merecen las mismas herramientas tecnológicas que las grandes corporaciones.</p>
-          <p>Nuestro equipo de 48 ingenieros, diseñadores y consultores de negocio trabajamos juntos para crear soluciones que son potentes, intuitivas y asequibles — desde sistemas ERP hasta plataformas de analítica con inteligencia artificial.</p>
-          <p>Hoy atendemos a más de 200 empresas en El Salvador, Guatemala, Honduras y Costa Rica, con un crecimiento sostenido del 40% anual que nos posiciona como líderes del mercado regional.</p>
-          <div class="about-stats-row">
-            <div><div class="about-stat-num about-stat-num-indigo">200+</div><div class="about-stat-lbl">Clientes activos</div></div>
-            <div><div class="about-stat-num about-stat-num-coral">40%</div><div class="about-stat-lbl">Crecimiento anual</div></div>
-            <div><div class="about-stat-num about-stat-num-mint">48</div><div class="about-stat-lbl">Colaboradores</div></div>
+        <div class="col-lg-6">
+          <div class="texto-acerca">
+            <div class="etq etq-ind">¿Quiénes somos?</div>
+            <h2>Software que <span>impulsa</span> el crecimiento empresarial</h2>
+            <p>CodeNova es una empresa salvadoreña fundada en 2020 con la misión de democratizar el acceso a software empresarial de calidad en Centroamérica.</p>
+            <p>Nuestro equipo de 48 ingenieros, diseñadores y consultores trabaja para crear soluciones potentes, intuitivas y asequibles para todo tipo de empresa.</p>
+            <p>Hoy atendemos a más de 200 empresas en El Salvador, Guatemala, Honduras y Costa Rica, con un crecimiento sostenido del 40% anual.</p>
+            <div class="fila-stats">
+              <div>
+                <div class="stat-numero stat-indigo">200+</div>
+                <div class="stat-label">Clientes activos</div>
+              </div>
+              <div>
+                <div class="stat-numero stat-naranja">40%</div>
+                <div class="stat-label">Crecimiento anual</div>
+              </div>
+              <div>
+                <div class="stat-numero stat-verde">48</div>
+                <div class="stat-label">Colaboradores</div>
+              </div>
+            </div>
+            <a href="contacto.html" class="btn-cn btn-cn-primario">Contáctanos &rarr;</a>
           </div>
-          <a href="contacto.html" class="boton boton-primario">Contáctanos &rarr;</a>
         </div>
       </div>
     </div>
   </section>
-
   <!-- VALORES -->
-  <section class="seccion-bg">
-    <div class="contenedor">
-      <div class="encabezado-seccion">
-        <div class="etiqueta etiqueta-coral">Nuestros valores</div>
+  <section class="seccion-clara">
+    <div class="container">
+      <div class="cab-sec">
+        <div class="etq etq-nar">Nuestros valores</div>
         <h2>Los principios que <span>nos guían</span></h2>
-        <p>Cada decisión que tomamos está fundamentada en cuatro valores corporativos que definen quiénes somos y cómo trabajamos.</p>
+        <p>Cada decisión que tomamos está fundamentada en cuatro valores corporativos que definen quiénes somos.</p>
       </div>
-      <div class="values-grid">
-        <div class="value-card">
-          <div class="value-card-icon valor-bg-indigo">💡</div>
-          <h3>Innovación</h3>
-          <p>Buscamos constantemente nuevas formas de resolver los problemas empresariales con tecnología de vanguardia.</p>
+      <div class="row g-4">
+        <div class="col-lg-3 col-sm-6">
+          <div class="tarjeta-valor-empresa">
+            <div class="valor-icono icono-bg-indigo">💡</div>
+            <h3>Innovación</h3>
+            <p>Buscamos constantemente nuevas formas de resolver los problemas empresariales con tecnología de vanguardia.</p>
+          </div>
         </div>
-        <div class="value-card">
-          <div class="value-card-icon valor-bg-coral">🎯</div>
-          <h3>Calidad</h3>
-          <p>Cada línea de código y cada pantalla está diseñada con los más altos estándares de calidad y usabilidad.</p>
+        <div class="col-lg-3 col-sm-6">
+          <div class="tarjeta-valor-empresa">
+            <div class="valor-icono icono-bg-naranja">🎯</div>
+            <h3>Calidad</h3>
+            <p>Cada línea de código y cada pantalla está diseñada con los más altos estándares de calidad y usabilidad.</p>
+          </div>
         </div>
-        <div class="value-card">
-          <div class="value-card-icon valor-bg-mint">🤝</div>
-          <h3>Compromiso</h3>
-          <p>Somos socios estratégicos de nuestros clientes. Su éxito es nuestro éxito y trabajamos incansablemente.</p>
+        <div class="col-lg-3 col-sm-6">
+          <div class="tarjeta-valor-empresa">
+            <div class="valor-icono icono-bg-verde">🤝</div>
+            <h3>Compromiso</h3>
+            <p>Somos socios estratégicos de nuestros clientes. Su éxito es nuestro éxito y trabajamos incansablemente.</p>
+          </div>
         </div>
-        <div class="value-card">
-          <div class="value-card-icon valor-bg-sky">🔍</div>
-          <h3>Transparencia</h3>
-          <p>Comunicación honesta y directa con clientes, empleados y socios en absolutamente todo momento.</p>
+        <div class="col-lg-3 col-sm-6">
+          <div class="tarjeta-valor-empresa">
+            <div class="valor-icono icono-bg-cielo">🔍</div>
+            <h3>Transparencia</h3>
+            <p>Comunicación honesta y directa con clientes, empleados y socios en absolutamente todo momento.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
   <!-- HISTORIA + MISIÓN -->
   <section>
-    <div class="contenedor">
-      <div class="grid-2col-gap72">
-        <div>
-          <div class="etiqueta etiqueta-indigo">Historia</div>
-          <h2 class="h2-subtitulo">Nuestra <span class="texto-indigo">trayectoria</span></h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="tl-year">2020</div>
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-6">
+          <div class="etq etq-ind">Historia</div>
+          <h2 class="subtitulo-seccion">Nuestra <span class="texto-indigo">trayectoria</span></h2>
+          <div class="linea-tiempo">
+            <div class="evento-tiempo">
+              <div class="evento-anio">2020</div>
               <h4>Fundación de CodeNova</h4>
               <p>Cinco ingenieros salvadoreños fundan CodeNova con la visión de crear software accesible para el mercado centroamericano.</p>
             </div>
-            <div class="timeline-item">
-              <div class="tl-year">2021</div>
+            <div class="evento-tiempo">
+              <div class="evento-anio">2021</div>
               <h4>Lanzamiento de ERP Nova</h4>
               <p>Se lanza la primera versión del ERP Nova obteniendo 30 clientes en los primeros 6 meses de operación.</p>
             </div>
-            <div class="timeline-item">
-              <div class="tl-year">2022</div>
+            <div class="evento-tiempo">
+              <div class="evento-anio">2022</div>
               <h4>Expansión regional</h4>
               <p>Expansión a Guatemala y Honduras. Lanzamiento de CloudSync con gran acogida en el mercado.</p>
             </div>
-            <div class="timeline-item">
-              <div class="tl-year">2023</div>
+            <div class="evento-tiempo">
+              <div class="evento-anio">2023</div>
               <h4>DataVault e IA</h4>
               <p>Lanzamiento de DataVault con capacidades de machine learning. Superamos los 100 clientes activos.</p>
             </div>
-            <div class="timeline-item">
-              <div class="tl-year">2025</div>
+            <div class="evento-tiempo">
+              <div class="evento-anio">2025</div>
               <h4>200+ clientes activos</h4>
               <p>Expansión a Costa Rica y lanzamiento de la aplicación móvil oficial para iOS y Android.</p>
             </div>
           </div>
         </div>
-        <div>
-          <div class="etiqueta etiqueta-mint">Misión y visión</div>
-          <h2 class="h2-subtitulo">Hacia dónde <span class="texto-indigo">vamos</span></h2>
-          <div class="card-simple">
-            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=700&h=220&fit=crop" alt="Misión CodeNova" class="card-img-160"/>
-            <div class="card-simple-body">
+        <div class="col-lg-6">
+          <div class="etq etq-ver">Misión y visión</div>
+          <h2 class="subtitulo-seccion">Hacia dónde <span class="texto-indigo">vamos</span></h2>
+          <div class="tarjeta-mision">
+            <img src="img/historia1.jpeg" alt="Misión" class="tarjeta-mision-imagen"/>
+            <div class="tarjeta-mision-cuerpo">
               <h3 class="titulo-indigo">🎯 Misión</h3>
-              <p class="parrafo-14">Proveer soluciones de software empresarial innovadoras, accesibles y de alta calidad que impulsen la productividad y crecimiento de las empresas centroamericanas.</p>
+              <p class="texto-normal">Proveer soluciones de software empresarial innovadoras, accesibles y de alta calidad que impulsen la productividad y crecimiento de las empresas centroamericanas.</p>
             </div>
           </div>
-          <div class="card-simple">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=700&h=220&fit=crop" alt="Visión CodeNova" class="card-img-160"/>
-            <div class="card-simple-body">
-              <h3 class="titulo-mint">🔵 Visión 2030</h3>
-              <p class="parrafo-14">Ser la empresa de software empresarial líder en Centroamérica, reconocida por la excelencia técnica e impacto positivo en la transformación digital de la región.</p>
+          <div class="tarjeta-mision">
+            <img src="img/historia2.jpeg" alt="Visión" class="tarjeta-mision-imagen"/>
+            <div class="tarjeta-mision-cuerpo">
+              <h3 class="titulo-verde">🔵 Visión 2030</h3>
+              <p class="texto-normal">Ser la empresa de software empresarial líder en Centroamérica, reconocida por la excelencia técnica e impacto positivo en la transformación digital de la región.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- LLAMADO A LA ACCIÓN -->
-  <section class="seccion-cta">
-    <div class="fondo-cta"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&h=600&fit=crop" alt=""/></div>
-    <div class="superposicion-cta"></div>
-    <div class="contenedor interior-cta">
-      <h2>¿Listo para transformar tu empresa?</h2>
-      <p>Únete a las más de 200 empresas que ya confían en CodeNova para gestionar su negocio.</p>
-      <a href="contacto.html" class="boton boton-blanco">Solicitar Demo Gratuita &rarr;</a>
-    </div>
-  </section>
-
 </main>
-
-<footer>
-  <div class="contenedor">
-    <div class="rejilla-pie">
-      <div class="marca-pie">
-        <a href="index.html" class="nav-logo" aria-label="CodeNova"><img src="img/Logo.png" alt="CodeNova"/></a>
-        <p>Empresa salvadoreña especializada en software empresarial.</p>
-        <div class="enlaces-sociales"><a href="#">f</a><a href="#">X</a><a href="#">in</a><a href="#">ig</a></div>
+<footer class="pie-pagina">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-5">
+        <div class="pie-descripcion">
+          <a href="index.html" class="pie-logo" aria-label="CodeNova"><img src="img/Logo.png" alt="CodeNova"/></a>
+          <p>Empresa salvadoreña especializada en software empresarial.</p>
+          <div class="redes-sociales"><a href="#">f</a><a href="#">X</a><a href="#">in</a><a href="#">ig</a></div>
+        </div>
       </div>
-      <div class="columna-pie"><h4>Productos</h4><ul><li><a href="galeria.html">ERP Nova</a></li><li><a href="galeria.html">CloudSync</a></li><li><a href="galeria.html">DataVault</a></li></ul></div>
-      <div class="columna-pie"><h4>Empresa</h4><ul><li><a href="acerca.html">Acerca de</a></li><li><a href="autores.html">Equipo</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
-      <div class="columna-pie"><h4>Contacto</h4><ul><li><a href="mailto:info@codenova.com">info@codenova.com</a></li><li>+503 2200-0000</li><li>San Salvador, El Salvador</li></ul></div>
+      <div class="col-lg-2 col-md-4">
+        <div class="columna-pie"><h4>Productos</h4><ul><li><a href="galeria.html">ERP Nova</a></li><li><a href="galeria.html">CloudSync</a></li><li><a href="galeria.html">DataVault</a></li></ul></div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <div class="columna-pie"><h4>Empresa</h4><ul><li><a href="acerca.html">Acerca de</a></li><li><a href="autores.html">Equipo</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <div class="columna-pie"><h4>Contacto</h4><ul><li><a href="mailto:info@codenova.com">info@codenova.com</a></li><li>+503 2200-0000</li><li>San Salvador, El Salvador</li></ul></div>
+      </div>
     </div>
     <div class="pie-inferior"><span>&copy; 2026 CodeNova. Todos los derechos reservados.</span><span>LME-404 &mdash; Universidad Don Bosco</span></div>
   </div>
